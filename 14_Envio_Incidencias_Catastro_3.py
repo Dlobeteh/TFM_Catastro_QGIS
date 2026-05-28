@@ -113,9 +113,10 @@ class EnvioIncCatastro4(QgsProcessingAlgorithm):   # CREA LA CLASE DEL ALGORITMO
 
     def initAlgorithm(self, config=None):           # DEFINE LOS PARÁMETROS QUE APARECEN EN LA VENTANA DEL SCRIPT
 
-        self.addParameter(QgsProcessingParameterFolderDestination(
+        self.addParameter(QgsProcessingParameterFile(
             self.BASE_SHP,                          # PARÁMETRO INTERNO
-            "Carpeta SHP base"                      # TEXTO QUE VE EL USUARIO
+            "Carpeta SHP base",                      # TEXTO QUE VE EL USUARIO
+            behavior=QgsProcessingParameterFile.Folder #CARPETA DE ENTRADA DE ARCHIVOS SHP
         ))
 
         self.addParameter(QgsProcessingParameterFeatureSource(
