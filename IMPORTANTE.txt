@@ -1,0 +1,3 @@
+
+Para conseguir una óptima generación de los mapas es recomendable cargar en el proyecto de trabajo el archivo "Plantilla_script.qpt"
+o utilizar el proyecto adjunto ”proyecto_TFM.qpz”
